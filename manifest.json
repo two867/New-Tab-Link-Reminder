@@ -1,0 +1,28 @@
+{
+  "name": "New Tab Link Reminder",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "检测链接是否在新标签页打开, 如果是, 显示不同的鼠标指针样式",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/style.css",
+        "images/cursor.png",
+        "images/cursor-ext.png"
+      ],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["src/style.css"],
+      "js": ["src/toggler.js"]
+    }
+  ]
+}
