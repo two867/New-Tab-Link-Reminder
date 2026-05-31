@@ -5,8 +5,7 @@
   "description": "检测链接是否在新标签页打开, 如果是, 显示不同的鼠标指针样式",
   "icons": {
     "16": "images/icon16.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "48": "images/icon48.png"
   },
   "web_accessible_resources": [
     {
